@@ -66,6 +66,11 @@ function makeItEmpty(){
     ctx.clearRect(0, 0, can.height * 100, can.width * 100);
 }
 
+function resize(){
+    const canvas = document.getElementById("myCanvas");
+    canvas.width = window.innerWidth;
+}
+
 let fontSize = 10;
 let isClicked = false;
 let pos = {x:0, y:0}

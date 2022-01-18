@@ -4,7 +4,7 @@
         <title>Drawing Pad</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body onload="resize()">
         <script src="script.js"></script>
         <div id="forHead">
             <h1>Draw a Pic</h1>
@@ -12,18 +12,17 @@
 
         <hr>
         <div id="setSize">
-            <label for="height"><b>Height:</b></label>
+            <!-- <label for="height"><b>Height:</b></label>
             <input type="number" id="hei" value="400" name="height" min="100" max="900" onchange="changeHeight()">
             
             <label for="width"><b>Width:</b></label>
             <input type="number" id="wid" value="400" name="width" min="100" max="900", onchange="changeWidth()">
-            
+            -->
             <label for="fontSize"><b>Font Size:</b></label>
             <input type="number" id="sz" value="20" name="size" min="10" max="50" onchange="changeFontSizeNum()">
         </div>
 
-
-        <canvas id="myCanvas" height="400" width="600" onmousedown="startDrawing()" onmouseup="stopDrawing()" onmousemove="draw()"></canvas>
+        <canvas id="myCanvas" height="500" onmousedown="startDrawing()" onmouseup="stopDrawing()" onmousemove="draw()"></canvas>
     
         <div id="forInput" >
             <input type="color" value="001A57" id="clr">
